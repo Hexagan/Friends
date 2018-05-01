@@ -10,6 +10,16 @@ public class Main { //La idea es realizar un programa que con una cadena de text
 		int decision;
 		
 		texto = JOptionPane.showInputDialog("Inserte un texto");
+		
+		decision = JOptionPane.showOptionDialog(null, 
+				"¿Desea que sea todo minuscula o mayuscula?", 
+				"Decision", 
+				JOptionPane.YES_NO_CANCEL_OPTION, 
+				JOptionPane.QUESTION_MESSAGE, 
+				null,
+				null,
+				null);
+	
 	}
 
 }
