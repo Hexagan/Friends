@@ -19,6 +19,16 @@ public class Main { //La idea es realizar un programa que con una cadena de text
 				null,
 				null,
 				null);
+		
+		if(decision == 0)
+		{
+			texto = texto.toLowerCase();	
+		}
+		
+		else
+		{
+			texto = texto.toUpperCase();	
+		}
 	
 	}
 
