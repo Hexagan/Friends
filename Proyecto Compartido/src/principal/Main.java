@@ -29,6 +29,11 @@ public class Main { //La idea es realizar un programa que con una cadena de text
 		{
 			texto = texto.toUpperCase();	
 		}
+		
+		JOptionPane.showMessageDialog(null, 
+				texto, 
+				"Cadena Resultante", 
+				JOptionPane.INFORMATION_MESSAGE);
 	
 	}
 
