@@ -9,6 +9,8 @@ public class Main { //La idea es realizar un programa que con una cadena de text
 		String texto;
 		int decision;
 		
+		Object[] botones = { "minuscula", "MAYUSCULA"};
+		
 		texto = JOptionPane.showInputDialog("Inserte un texto");
 		
 		decision = JOptionPane.showOptionDialog(null, 
@@ -17,7 +19,7 @@ public class Main { //La idea es realizar un programa que con una cadena de text
 				JOptionPane.YES_NO_CANCEL_OPTION, 
 				JOptionPane.QUESTION_MESSAGE, 
 				null,
-				null,
+				botones,
 				null);
 		
 		if(decision == 0)
