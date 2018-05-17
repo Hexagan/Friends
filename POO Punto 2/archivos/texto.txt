@@ -1,0 +1,8 @@
+la aleatoriedad se asocia a todo proceso cuyo resultado no es previsible más que en razón de la intervención del azar.
+el resultado de todo suceso aleatorio no puede determinarse en ningún caso antes de que este se produzca.
+el estudio de los fenómenos aleatorios queda dentro del ámbito de la teoría de la probabilidad y, en un marco más amplio, en el de la estadística.
+
+la palabra aleatorio se usa para expresar una aparente carencia de propósito, causa, u orden. 
+el término aleatoriedad se usa a menudo como sinónimo con un número de propiedades estadísticas medibles, tales como la carencia de tendencias o correlación.
+
+la aleatoriedad ocupa un lugar importante en la ciencia y la filosofía.
