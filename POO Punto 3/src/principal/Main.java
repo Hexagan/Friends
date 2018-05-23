@@ -8,27 +8,16 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.swing.JDialog;
-import javax.swing.JFrame;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
 		
-		String opcInicial = "Agregar Contacto";
-		String nombre, email, line = "";
-		int telefono = 0,numero = 0, contador,catorce=14;
-		
-		
-		
+		String opcInicial = "Agregar Contacto";	
 		JDialog.setDefaultLookAndFeelDecorated(true);
-	
-		
 		Object[] selecciones = {"Agregar Contacto", "Buscar Contacto", "Buscar Contacto Por Telefono", "Cargar Contactos", "Eliminar Contacto", "Existe Contacto", "Guardar Contactos", "Listar Contactos"};
-		
-		
 		Object decision = JOptionPane.showInputDialog(null, 
 									"Por favor elija la opcion que desea ejecutar: ", 
 									"Bienvenido", 
@@ -54,7 +43,7 @@ public class Main {
 		br.reset();
 		
 		AgregarContacto ag = new AgregarContacto();
-		contador = ag.agregarContacto(br,bw);
+		ag.agregarContacto(br,bw);
 	
 		br.reset();
 		
@@ -90,6 +79,7 @@ public class Main {
 		break;		
 		
 		case "Eliminar Contacto":
+		br.reset();
 		
 		EliminarContacto ec = new EliminarContacto();
 		ec.eliminarcontacto(br,contactos);
@@ -111,7 +101,7 @@ public class Main {
 		br.reset();
 		
 		GuardarContactos gc = new GuardarContactos();
-		gc.guardarcontactos(br, bw);
+		gc.guardarcontactos(br);
 		
 		br.reset();	
 		break;
@@ -125,7 +115,7 @@ public class Main {
 		break;
 		
 		default:
-			
+		
 			JOptionPane.showMessageDialog(null, "Ha ocurrido un error extraño en la seleccion de opciones, vuelvalo a intentar");
 			
 		break;

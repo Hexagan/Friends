@@ -19,11 +19,12 @@ public class EliminarContacto {
 		
 		
 		try {
+			
 			PrintWriter pw = new PrintWriter("archivos\\temp.txt","UTF-8");
 			File temp = new File ("archivos\\temp.txt");
 			BufferedWriter bwtemp = new BufferedWriter(new FileWriter(temp));
 			BufferedReader brtemp = new BufferedReader(new FileReader(temp));
-			System.out.println(temp.getAbsolutePath());
+			
 			
 			try {
 				numero = Integer.parseInt(JOptionPane.showInputDialog("Indique el numero de contacto que desea eliminar de la base de datos"));		
@@ -99,7 +100,7 @@ public class EliminarContacto {
 			
 			    temp.delete();
 			    System.out.println("file deleted");
-			
+		
 			bw.close();
 			pw2.close();
 			

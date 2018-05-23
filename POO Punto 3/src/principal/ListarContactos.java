@@ -8,7 +8,6 @@ public class ListarContactos {
 		String line="";
 		try {
 			
-		
 		while((line = br.readLine()) != null){
 			System.out.println(line);
 		}

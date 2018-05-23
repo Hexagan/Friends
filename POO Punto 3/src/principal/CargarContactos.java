@@ -31,7 +31,7 @@ public class CargarContactos {
 				
 				count++;
 			}
-			
+			bwBack.write("\n");
 			pw.close();
 			bwBack.close();
 			
