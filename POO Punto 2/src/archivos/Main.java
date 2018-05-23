@@ -30,7 +30,7 @@ public class Main {
 	
 		br1.mark(10000);
 		
-		if((linea = br1.readLine()) == null);
+		if((linea = br1.readLine()) == null); //Si el txt original esta vacio por alguna razon, llenarlo con este texto
 		{
 			bwOri.write(contenido);
 			bwOri.flush();
